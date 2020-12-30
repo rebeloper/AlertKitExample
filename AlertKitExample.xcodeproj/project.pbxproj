@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		C995BC8C259B494E007B75F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C995BC8B259B494E007B75F8 /* ContentView.swift */; };
 		C995BC8E259B4951007B75F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C995BC8D259B4951007B75F8 /* Assets.xcassets */; };
 		C995BC91259B4951007B75F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C995BC90259B4951007B75F8 /* Preview Assets.xcassets */; };
+		C995BC9B259B4B73007B75F8 /* AlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = C995BC9A259B4B73007B75F8 /* AlertKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C995BC9B259B4B73007B75F8 /* AlertKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = AlertKitExample;
+			packageProductDependencies = (
+				C995BC9A259B4B73007B75F8 /* AlertKit */,
+			);
 			productName = AlertKitExample;
 			productReference = C995BC86259B494E007B75F8 /* AlertKitExample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = C995BC7D259B494E007B75F8;
+			packageReferences = (
+				C995BC99259B4B73007B75F8 /* XCRemoteSwiftPackageReference "AlertKit" */,
+			);
 			productRefGroup = C995BC87259B494E007B75F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C995BC99259B4B73007B75F8 /* XCRemoteSwiftPackageReference "AlertKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/AlertKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C995BC9A259B4B73007B75F8 /* AlertKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C995BC99259B4B73007B75F8 /* XCRemoteSwiftPackageReference "AlertKit" */;
+			productName = AlertKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C995BC7E259B494E007B75F8 /* Project object */;
 }
